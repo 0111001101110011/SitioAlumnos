@@ -1,0 +1,145 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="home" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Intercambios Shavos</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form runat="server">
+            <header>
+                <div class="wrap">
+                    <div class="header-wrapper">
+                        <h1>DE LOS SHAVOS . . .<span> PARA LOS SHAVOS !</span></h1>
+                        <div class="buttons-wrapper">
+                            <asp:Button ID="nueva_Solicitud" class="button" runat="server" Text="Nueva Solicitud" OnClick="nueva_Solicitud_Click" />
+                        <!--    <a href="Registro.html" class="button">Nueva solicitud</a> -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+	    <div class="limiter">
+		    <div class="container-table100">
+			    <div class="wrap-table100">
+				    <div class="table100 ver1 m-b-110">
+					    <table data-vertable="ver1">
+						    <thead>
+							    <tr class="row100 head">
+								    <th class="column100 column1" data-column="column1"> <h4> <span>Solicitudes nuevas</span></h4></th>
+								    <th class="column100 column2" data-column="column2"><span>ID</span></th>
+								    <th class="column100 column3" data-column="column3"><span>Universidad</span></th>
+								    <th class="column100 column4" data-column="column4"><span>Pais</span></th>
+								    <th class="column100 column5" data-column="column5"><span>Fecha</span></th>
+							    </tr>
+						    </thead>
+						    <tbody>
+							    <tr class="row100">
+								    <td class="column100 column1" data-column="column1">4</td>
+								    <td class="column100 column2" data-column="column2">0001</td>
+								    <td class="column100 column3" data-column="column3">Conalep</td>
+								    <td class="column100 column4" data-column="column4">Guaymas</td>
+								    <td class="column100 column5" data-column="column5">6:09 PM.</td>
+							    </tr>
+						    </tbody>
+					    </table>
+				    </div>
+
+				    <!-- <div class="table100 ver1 m-b-110"> -->
+				    <div class="table100 ver2 m-b-110">
+					    <table data-vertable="ver">
+						    <thead>
+							    <tr class="row100 head">
+								    <th class="column100 column1" data-column="column1"> <h4> <span>Solicitudes en proceso</span></h4></th>
+								    <th class="column100 column2" data-column="column2"><span>ID</span></th>
+								    <th class="column100 column3" data-column="column3"><span>Universidad</span></th>
+								    <th class="column100 column4" data-column="column4"><span>Pais</span></th>
+								    <th class="column100 column5" data-column="column5"><span>Fecha</span></th>
+							    </tr>
+						    </thead>
+						    <tbody>
+							    <tr class="row100">
+								    <td class="column100 column1" data-column="column1">2</td>
+								    <td class="column100 column2" data-column="column2">0002</td>
+								    <td class="column100 column3" data-column="column3">Ikzon</td>
+								    <td class="column100 column4" data-column="column4">Presa</td>
+								    <td class="column100 column5" data-column="column5">10:00 PM</td>
+							    </tr>
+						    </tbody>
+					    </table>
+				    </div>
+				
+				    <div class="table100 ver3 m-b-110">
+					    <table data-vertable="ver">
+						    <thead>
+							    <tr class="row100 head">
+								    <th class="column100 column1" data-column="column1"> <h4> <span>Solicitudes aceptadas</span></h4></th>
+							    </tr>
+						    </thead>
+						    <tbody>
+							    <tr class="row100">
+								    <td class="column100 column1" data-column="column1"> 1 </td>
+							    </tr>
+						    </tbody>
+					    </table>
+				    </div>
+				
+				    <div class="table100 ver4 m-b-110">
+					    <table data-vertable="ver">
+						    <thead>
+							    <tr class="row100 head">
+								    <th class="column100 column1" data-column="column1"> <h4> <span>Solicitudes rechazadas</span></h4></th>
+							    </tr>
+						    </thead>
+						    <tbody>
+							    <tr class="row100">
+								    <td class="column100 column1" data-column="column1"> 0 </td>
+							    </tr>
+						    </tbody>
+					    </table>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <footer>
+            <div class="wrap">
+                <p>&copy; 2019 <strong> Intercambios Shavos</strong>, Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/library.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/retina.js"></script>
+	
+	    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	    <script src="vendor/bootstrap/js/popper.js"></script>
+	    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="vendor/select2/select2.min.js"></script>
+	    <script src="js/main.js"></script>
+
+        </form>
+</body>
+</html>

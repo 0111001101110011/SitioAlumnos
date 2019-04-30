@@ -11,4 +11,14 @@ public partial class login : System.Web.UI.Page
     {
 
     }
+
+    protected void btn_loginAlumno_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("home.aspx");
+    }
+
+    protected void btn_loginAdmin_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("adm.aspx");
+    }
 }
